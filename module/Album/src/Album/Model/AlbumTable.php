@@ -50,9 +50,9 @@ class AlbumTable {
     }
 
 public function findAlbumByUser($id){
-    foreach ($result->getMessages() as $message){
-        
-    }
+   $resultSet= $this->tableGateway->select($where="users_id=$id");
+        return $resultSet;
+    
 }
     
     

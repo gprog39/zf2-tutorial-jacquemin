@@ -23,7 +23,7 @@ class AlbumController extends AbstractActionController {
 
     public function indexAction() {
         return new ViewModel(array(
-            'albums' => $this->getAlbumTable()->findByUser(),
+            'albums' => $this->getAlbumTable()-> findAlbumByUser(), //fetchAll() au départ
         ));
     }
 
