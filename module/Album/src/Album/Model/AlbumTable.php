@@ -49,4 +49,13 @@ class AlbumTable {
         $this->tableGateway->delete(array('id' => (int) $id));
     }
 
+public function findAlbumByUser($id){
+    foreach ($result->getMessages() as $message){
+        
+    }
+}
+    
+    
+    
+    
 }
